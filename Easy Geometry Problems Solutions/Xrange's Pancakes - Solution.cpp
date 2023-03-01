@@ -1,18 +1,13 @@
 #include <iostream>
 #include <math.h>
-
 #define dbl double
-
 using namespace std;
-
-int main()
-{
+int main(){
     dbl n,m;
     cin>>n>>m;
     dbl apos = 0;
     bool clockwise = true;
-    for (int i = 0; i < m; i++)
-    {
+    for (int i = 0; i < m; i++){
         dbl type,k;
         cin>>type>>k;
         if (type == 1){
