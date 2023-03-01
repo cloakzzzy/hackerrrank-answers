@@ -1,10 +1,9 @@
+// A 14 years old's solution
 #include <iostream>
 #include <math.h>
 #include <iomanip>
-
 using namespace std; 
 #define dbl double
-
 int main()
 {
     dbl q;
