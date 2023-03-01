@@ -20,6 +20,5 @@ int main()
         dbl val = min(((n - sqrt(n * n - (4 * 1 * n*k))) / 2 * 1) , ((n + sqrt(n * n - (4 * 1 * n*k))) / 2 * 1));
         cout.precision(10000);
         cout<<(floor(val) * 2)<<'\n';
-        
     }
 }
