@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <iomanip>
 
 using namespace std; 
 #define dbl double
@@ -11,14 +12,11 @@ int main()
     for (dbl i = 0; i < q; i++){
         dbl n; dbl k;
         cin>>n>>k;
-        dbl dsc = n * n - (4 * 1 * n*k);
-        if (dsc <= 0){
-            cout.precision(10000);
-            cout<<n - 1<<'\n';
+        if ((n * n - (4 * 1 * n * k)) <= 0){
+            cout<<setprecision(1000)<<n - 1<<'\n';
             continue;
         }
-        dbl val = min(((n - sqrt(n * n - (4 * 1 * n*k))) / 2 * 1) , ((n + sqrt(n * n - (4 * 1 * n*k))) / 2 * 1));
-        cout.precision(10000);
-        cout<<(floor(val) * 2)<<'\n';
+        dbl val = ((n - sqrt(n * n - (4 * 1 * n*k))) / 2 * 1);
+        cout<<setprecision(1000)<<(floor(val) * 2)<<'\n';
     }
 }
